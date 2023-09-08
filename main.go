@@ -41,7 +41,6 @@ func main() {
 	textView := tview.NewTextView()
 	textView.SetTitle("公告チャット")
 	textView.SetBorder(true)
-	textView.SetScrollable(false)
 
 	inputField := tview.NewInputField()
 	inputField.SetLabel("Chat: ")
@@ -62,6 +61,7 @@ func main() {
 	})
 
 	textView.SetChangedFunc(func() {
+		textView.ScrollToEnd()
 		app.Draw()
 	})
 
