@@ -1,4 +1,4 @@
-# koukoku-chat
+# koukoku-chat-tui
 
 mattn氏の電子公告のチャット機能を利用できるチャットクライアント…のTUIクライアント
 
